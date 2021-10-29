@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ButtonCCell" id="gTV-IL-0wX" customClass="ButtonCCell" customModule="AnimeTvTracker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="74"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="345" height="74"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jaa-cY-p2L">
+                        <rect key="frame" x="0.0" y="0.0" width="345" height="74"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="a3E-l4-8rN">
+                                <rect key="frame" x="2" y="19.5" width="341" height="35"/>
+                                <subviews>
+                                    <button hidden="YES" opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ph4-ue-9J5" customClass="RoundFillBtn" customModule="AnimeTvTracker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="35"/>
+                                        <state key="normal" title="Recent"/>
+                                        <connections>
+                                            <action selector="btnPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="rZ5-De-mA4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sM-8z-7jK" customClass="RoundFillBtn" customModule="AnimeTvTracker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="107" height="35"/>
+                                        <state key="normal" title="On Air"/>
+                                        <connections>
+                                            <action selector="btnPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="ioF-la-Jnf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4N-8y-fr0" customClass="RoundFillBtn" customModule="AnimeTvTracker" customModuleProvider="target">
+                                        <rect key="frame" x="117" y="0.0" width="107" height="35"/>
+                                        <state key="normal" title="Popular"/>
+                                        <connections>
+                                            <action selector="btnPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="tAc-vb-Dyb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wE7-O3-AJq" customClass="RoundFillBtn" customModule="AnimeTvTracker" customModuleProvider="target">
+                                        <rect key="frame" x="234" y="0.0" width="107" height="35"/>
+                                        <state key="normal" title="Top Rated"/>
+                                        <connections>
+                                            <action selector="btnPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="wJd-zb-dZj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="ppR-96-CyC"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="a3E-l4-8rN" firstAttribute="centerY" secondItem="Jaa-cY-p2L" secondAttribute="centerY" id="ZEb-HH-wou"/>
+                            <constraint firstItem="a3E-l4-8rN" firstAttribute="leading" secondItem="Jaa-cY-p2L" secondAttribute="leading" constant="2" id="eKT-gK-egg"/>
+                            <constraint firstAttribute="trailing" secondItem="a3E-l4-8rN" secondAttribute="trailing" constant="2" id="jv8-Wp-6Nz"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Jaa-cY-p2L" secondAttribute="trailing" id="Qqv-Nv-Vcc"/>
+                <constraint firstAttribute="bottom" secondItem="Jaa-cY-p2L" secondAttribute="bottom" id="V6P-aJ-sc7"/>
+                <constraint firstItem="Jaa-cY-p2L" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="o5y-vA-Pcl"/>
+                <constraint firstItem="Jaa-cY-p2L" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="oUk-3i-oVL"/>
+            </constraints>
+            <size key="customSize" width="422" height="103"/>
+            <connections>
+                <outlet property="btnOnAir" destination="6sM-8z-7jK" id="YtT-47-Icq"/>
+                <outlet property="btnPopular" destination="O4N-8y-fr0" id="wqW-hh-wrB"/>
+                <outlet property="btnRecent" destination="ph4-ue-9J5" id="T9w-Gq-QWH"/>
+                <outlet property="btnTopRated" destination="wE7-O3-AJq" id="Zrn-oZ-iB3"/>
+                <outlet property="stackView" destination="a3E-l4-8rN" id="cmw-UL-DQ6"/>
+            </connections>
+            <point key="canvasLocation" x="141.30434782608697" y="49.553571428571423"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="6sM-8z-7jK">
+            <size key="intrinsicContentSize" width="43" height="30"/>
+        </designable>
+        <designable name="O4N-8y-fr0">
+            <size key="intrinsicContentSize" width="53" height="30"/>
+        </designable>
+        <designable name="ph4-ue-9J5">
+            <size key="intrinsicContentSize" width="48" height="30"/>
+        </designable>
+        <designable name="wE7-O3-AJq">
+            <size key="intrinsicContentSize" width="70" height="30"/>
+        </designable>
+    </designables>
+</document>

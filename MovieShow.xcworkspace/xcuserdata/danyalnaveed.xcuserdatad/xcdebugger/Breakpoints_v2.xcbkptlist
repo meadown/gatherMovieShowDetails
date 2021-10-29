@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "8747514F-7A62-468E-858B-93D23F820541"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD8B5C3C-D053-43F3-A119-65B86984043C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieShow/Controllers/PersonDetailsVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FD8B5C3C-D053-43F3-A119-65B86984043C - b4fd259558a3ad7d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;MovieShow.PersonDetail&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; () in MovieShow.PersonDetailsVC.viewDidLoad() -&gt; ()"
+                  moduleName = "MovieShow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Xcode%20Projects/MovieShow/MovieShow/Controllers/PersonDetailsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "202">
+               </Location>
+               <Location
+                  uuid = "FD8B5C3C-D053-43F3-A119-65B86984043C - dcdafdf89b5caac8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Optional&lt;MovieShow.PersonDetail&gt;, Swift.Optional&lt;Swift.String&gt;) -&gt; () in MovieShow.PersonDetailsVC.viewDidLoad() -&gt; ()"
+                  moduleName = "MovieShow"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Xcode%20Projects/MovieShow/MovieShow/Controllers/PersonDetailsVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "209">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D2270486-8E80-475B-8A3C-3B832ED1F389"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MovieShow/Cells/TableView/CastTCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "collectionView(_:didSelectItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

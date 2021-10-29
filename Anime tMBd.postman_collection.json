@@ -1,0 +1,626 @@
+{
+	"info": {
+		"_postman_id": "13756736-3dfb-4f64-8783-18bab581e745",
+		"name": "Anime tMBd",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "image original",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.themoviedb.org/t/p/original/lJA2RCMfsWoskqlQhXPSLFQGXEJ.jpg",
+					"protocol": "https",
+					"host": [
+						"www",
+						"themoviedb",
+						"org"
+					],
+					"path": [
+						"t",
+						"p",
+						"original",
+						"lJA2RCMfsWoskqlQhXPSLFQGXEJ.jpg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Genre list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.themoviedb.org/3/genre/movie/list?api_key=cb18af292fe58b8cccf251899c845834&language=en-US",
+					"protocol": "https",
+					"host": [
+						"api",
+						"themoviedb",
+						"org"
+					],
+					"path": [
+						"3",
+						"genre",
+						"movie",
+						"list"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "cb18af292fe58b8cccf251899c845834"
+						},
+						{
+							"key": "language",
+							"value": "en-US"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "discover movie",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.themoviedb.org/3/discover/movie?api_key=cb18af292fe58b8cccf251899c845834&language=en-US&sort_by=popularity.desc&include_video=true&page=1&with_genres=16 ",
+					"protocol": "https",
+					"host": [
+						"api",
+						"themoviedb",
+						"org"
+					],
+					"path": [
+						"3",
+						"discover",
+						"movie"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "cb18af292fe58b8cccf251899c845834"
+						},
+						{
+							"key": "language",
+							"value": "en-US"
+						},
+						{
+							"key": "sort_by",
+							"value": "popularity.desc"
+						},
+						{
+							"key": "include_adult",
+							"value": "true",
+							"disabled": true
+						},
+						{
+							"key": "include_video",
+							"value": "true"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "with_genres",
+							"value": "16 "
+						},
+						{
+							"key": "with_watch_monetization_types",
+							"value": "flatrate",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "movie latest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.themoviedb.org/3/tv/latest?api_key=cb18af292fe58b8cccf251899c845834&language=en-US",
+					"protocol": "https",
+					"host": [
+						"api",
+						"themoviedb",
+						"org"
+					],
+					"path": [
+						"3",
+						"tv",
+						"latest"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "cb18af292fe58b8cccf251899c845834"
+						},
+						{
+							"key": "language",
+							"value": "en-US"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "movies upcoming",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.themoviedb.org/3/movie/upcoming?api_key=cb18af292fe58b8cccf251899c845834&language=en-US&page=1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"themoviedb",
+						"org"
+					],
+					"path": [
+						"3",
+						"movie",
+						"upcoming"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "cb18af292fe58b8cccf251899c845834"
+						},
+						{
+							"key": "language",
+							"value": "en-US"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "movies popular",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.themoviedb.org/3/movie/popular?api_key=cb18af292fe58b8cccf251899c845834&language=en-US&page=1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"themoviedb",
+						"org"
+					],
+					"path": [
+						"3",
+						"movie",
+						"popular"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "cb18af292fe58b8cccf251899c845834"
+						},
+						{
+							"key": "language",
+							"value": "en-US"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "discover tv",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.themoviedb.org/3/discover/tv?api_key=cb18af292fe58b8cccf251899c845834&language=en-US&sort_by=popularity.desc&include_video=true&page=1&with_genres=16 ",
+					"protocol": "https",
+					"host": [
+						"api",
+						"themoviedb",
+						"org"
+					],
+					"path": [
+						"3",
+						"discover",
+						"tv"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "cb18af292fe58b8cccf251899c845834"
+						},
+						{
+							"key": "language",
+							"value": "en-US"
+						},
+						{
+							"key": "sort_by",
+							"value": "popularity.desc"
+						},
+						{
+							"key": "include_adult",
+							"value": "true",
+							"disabled": true
+						},
+						{
+							"key": "include_video",
+							"value": "true"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "with_genres",
+							"value": "16 "
+						},
+						{
+							"key": "with_watch_monetization_types",
+							"value": "flatrate",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tv on_the_air",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.themoviedb.org/3/tv/on_the_air?api_key=cb18af292fe58b8cccf251899c845834&language=en-US&page=1&with_genres=16",
+					"protocol": "https",
+					"host": [
+						"api",
+						"themoviedb",
+						"org"
+					],
+					"path": [
+						"3",
+						"tv",
+						"on_the_air"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "cb18af292fe58b8cccf251899c845834"
+						},
+						{
+							"key": "language",
+							"value": "en-US"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "with_genres",
+							"value": "16"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tv airing_today",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.themoviedb.org/3/tv/airing_today?api_key=cb18af292fe58b8cccf251899c845834&language=en-US&page=1&with_genres=16",
+					"protocol": "https",
+					"host": [
+						"api",
+						"themoviedb",
+						"org"
+					],
+					"path": [
+						"3",
+						"tv",
+						"airing_today"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "cb18af292fe58b8cccf251899c845834"
+						},
+						{
+							"key": "language",
+							"value": "en-US"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "with_genres",
+							"value": "16"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tv latest",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.themoviedb.org/3/tv/latest?api_key=cb18af292fe58b8cccf251899c845834&language=en-US&with_genres=16",
+					"protocol": "https",
+					"host": [
+						"api",
+						"themoviedb",
+						"org"
+					],
+					"path": [
+						"3",
+						"tv",
+						"latest"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "cb18af292fe58b8cccf251899c845834"
+						},
+						{
+							"key": "language",
+							"value": "en-US"
+						},
+						{
+							"key": "with_genres",
+							"value": "16"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tv popular",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.themoviedb.org/3/tv/popular?api_key=cb18af292fe58b8cccf251899c845834&language=en-US&page=10&with_genres=16",
+					"protocol": "https",
+					"host": [
+						"api",
+						"themoviedb",
+						"org"
+					],
+					"path": [
+						"3",
+						"tv",
+						"popular"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "cb18af292fe58b8cccf251899c845834"
+						},
+						{
+							"key": "language",
+							"value": "en-US"
+						},
+						{
+							"key": "page",
+							"value": "10"
+						},
+						{
+							"key": "with_genres",
+							"value": "16"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tv top rated",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.themoviedb.org/3/tv/top_rated?api_key=cb18af292fe58b8cccf251899c845834&language=en-US&page=1&with_genres=16",
+					"protocol": "https",
+					"host": [
+						"api",
+						"themoviedb",
+						"org"
+					],
+					"path": [
+						"3",
+						"tv",
+						"top_rated"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "cb18af292fe58b8cccf251899c845834"
+						},
+						{
+							"key": "language",
+							"value": "en-US"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "with_genres",
+							"value": "16"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tv show search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.themoviedb.org/3/search/tv?api_key=cb18af292fe58b8cccf251899c845834&language=en-US&page=1&include_adult=false&query=abc&with_genres=16",
+					"protocol": "https",
+					"host": [
+						"api",
+						"themoviedb",
+						"org"
+					],
+					"path": [
+						"3",
+						"search",
+						"tv"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "cb18af292fe58b8cccf251899c845834"
+						},
+						{
+							"key": "language",
+							"value": "en-US"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "include_adult",
+							"value": "false"
+						},
+						{
+							"key": "query",
+							"value": "abc"
+						},
+						{
+							"key": "with_genres",
+							"value": "16"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tv cast",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.themoviedb.org/3/tv/105009/credits?api_key=cb18af292fe58b8cccf251899c845834&language=en-US",
+					"protocol": "https",
+					"host": [
+						"api",
+						"themoviedb",
+						"org"
+					],
+					"path": [
+						"3",
+						"tv",
+						"105009",
+						"credits"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "cb18af292fe58b8cccf251899c845834"
+						},
+						{
+							"key": "language",
+							"value": "en-US"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "person details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.themoviedb.org/3/person/2603957?api_key=cb18af292fe58b8cccf251899c845834&language=en-US",
+					"protocol": "https",
+					"host": [
+						"api",
+						"themoviedb",
+						"org"
+					],
+					"path": [
+						"3",
+						"person",
+						"2603957"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "cb18af292fe58b8cccf251899c845834"
+						},
+						{
+							"key": "language",
+							"value": "en-US"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tv details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.themoviedb.org/3/tv/105009?api_key=cb18af292fe58b8cccf251899c845834&language=en-US",
+					"protocol": "https",
+					"host": [
+						"api",
+						"themoviedb",
+						"org"
+					],
+					"path": [
+						"3",
+						"tv",
+						"105009"
+					],
+					"query": [
+						{
+							"key": "api_key",
+							"value": "cb18af292fe58b8cccf251899c845834"
+						},
+						{
+							"key": "language",
+							"value": "en-US"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
